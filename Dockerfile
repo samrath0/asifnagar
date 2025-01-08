@@ -1,11 +1,12 @@
 #Sample Dockerfile for NodeJS Apps
 
-FROM node:v23.4.0
-
+FROM node:latest
+# Set environment variables
 ENV NODE_ENV=production
-ENV MONGO_URI
-ENV RAZORPAY_KEY_ID
-ENV RAZORPAY_KEY_SECRET
+ENV MONGO_URI="your_mongo_connection_string"
+ENV RAZORPAY_KEY_ID="your_razorpay_key_id"
+ENV RAZORPAY_KEY_SECRET="your_razorpay_key_secret"
+
 WORKDIR /app
 
 COPY ["package.json", "package-lock.json*", "./"]
