@@ -13,7 +13,9 @@
             <div class=row style="margin: 1%;">
               <div class="col-sm-12 col-lg-12" style=" margin-top:4%"> <b> First Name :</b></div>
               <div class="col-sm-12 col-lg-12" style=" margin-top:4px;">
-                <input name="firstName" type="tel" id="firstName" class="form-control" value="<%= user.firstName %>" autofocus required>
+                <label for="firstName" class="form-label"><b>First Name:</b></label>
+                <input name="firstName" type="text" id="firstName" class="form-control" 
+                 value="<%= user.firstName %>" placeholder="First Name (do not enter your rank)" required autofocus>
               </div>
               <div class="col-sm-12 col-lg-12" style=" margin-top:4% "> <b> Last Name :</b></div>
               <div class="col-sm-12 col-lg-12" style=" margin-top:4px ">
